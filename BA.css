@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  animation: fadeInDown 1s ease-out;
+}
+
+header img {
+  max-width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+nav {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+.container {
+  padding: 30px 10%;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+section h2 {
+  color: #4b6cb7;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #4b6cb7;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+footer {
+  background: #182848;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  header img {
+    max-width: 80px;
+  }
+}
